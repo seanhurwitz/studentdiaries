@@ -4,6 +4,7 @@
   color: #333;
   margin: 0;
   padding: 0;
+  color: #333;
 }
 
 .header {
@@ -12,8 +13,8 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 72px;
-  background: #333;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -108,7 +109,39 @@
   align-items: center;
   flex-shrink: 0;
 }
-.about > h2 {
+
+body {
+  width: 100%;
+}
+
+.paragraph {
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: justify;
+}
+
+.grid-row-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 600px;
+  border-bottom: 3px solid #dfdfdf;
+}
+.grid-row-two > .center-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 8rem;
+}
+
+.about-img {
+  background: url("../img/pencil-bg.jpeg") no-repeat center center/cover;
+}
+
+.italicize {
+  font-style: italic;
+}
+
+.section-header {
   font-size: 4rem;
   background: #333;
   color: #ffffff;
@@ -117,43 +150,22 @@
   text-align: center;
 }
 
-body {
-  width: 100%;
-}
-
-.paragraph {
-  font-size: 1.5rem;
-  padding: 1rem 2rem;
-  line-height: 3.5rem;
-  text-align: center;
-  text-justify: inter-word;
-}
-
-.typewriter {
-  background: url("../img/typewriter.jpg") no-repeat center center/cover;
-  height: 600px;
-  position: relative;
-  z-index: 1;
-}
-.typewriter ::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.227);
-  z-index: -10;
-}
-
-.typewriter .paragraph {
-  width: 55%;
-  text-align: justify;
-  color: #ffffff;
-}
-
-.typewriter .paragraph .header {
+.paragraph-header {
   font-size: 3rem;
+  background: #333;
+  color: #ffffff;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  border-radius: 2rem 0px 2rem 0px;
+  display: flex;
+  align-items: center;
+}
+
+.list li {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
 /*# sourceMappingURL=main.css.map */
