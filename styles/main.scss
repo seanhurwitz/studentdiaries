@@ -169,3 +169,49 @@ body {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
 }
+
+.table {
+  color: $primary-color;
+  padding: 20px;
+  border-collapse: collapse;
+  margin: auto;
+  & th,
+  td {
+    padding: 0.75rem 1rem;
+    border: 1px solid $primary-color;
+  }
+
+  & thead {
+    background: #efefef;
+  }
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & h4 {
+    font-size: 5rem;
+    padding: 50px;
+  }
+  & h3 {
+    padding: 20px;
+    font-size: 2rem;
+  }
+}
+
+.footer {
+  background: $primary-color;
+  color: $white;
+  padding: 40px;
+  & * {
+    color: $white;
+  }
+}
